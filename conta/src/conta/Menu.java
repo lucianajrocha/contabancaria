@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+import conta.controller.ContaController;
 import conta.model.Conta;
 
 import conta.model.ContaCorrente;
@@ -15,6 +16,8 @@ public class Menu {
     public static Scanner leia = new Scanner(System.in);
 
     public static void main(String[] args) {
+
+        ContaController contas = new ContaController();
 
         int opcao;
 
@@ -82,37 +85,31 @@ public class Menu {
                     break;
                 case 2:
                     System.out.println("\n Listar todas as Contas");
-
+                    contas.listarTodas();
                     keyPress();
                     break;
                 case 3:
                     System.out.println("\n Buscar Conta por número");
-
                     keyPress();
                     break;
                 case 4:
                     System.out.println("\n Atualizar dados da Conta");
-
                     keyPress();
                     break;
                 case 5:
                     System.out.println("\n Apagar Conta");
-
                     keyPress();
                     break;
                 case 6:
                     System.out.println("\n Sacar");
-
                     keyPress();
                     break;
                 case 7:
                     System.out.println("\n Depositar");
-
                     keyPress();
                     break;
                 case 8:
                     System.out.println("\n Transferir");
-
                     keyPress();
                     break;
                 default:
