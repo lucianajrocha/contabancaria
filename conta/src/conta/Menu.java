@@ -241,7 +241,7 @@ public class Menu {
     public static void sobre() {
         System.out.println("\n*********************************************************");
         System.out.println("Projeto Desenvolvido por: Luciana Jovani Rocha");
-        System.out.println("Generation Brasil - lucianajrocha@hotmail.com");
+        System.out.println("Generation Brasil - lucianajrocha97@hotmail.com");
         System.out.println("github.com/lucianajrocha");
         System.out.println("*********************************************************");
     }
